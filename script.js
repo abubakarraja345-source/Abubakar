@@ -1,4 +1,4 @@
-const API_URL = 'https://127.0.0.1:5000/chat';
+const API_URL = 'http://127.0.0.1:5000/chat';
 
 function displayPersonality() {
   const personality = localStorage.getItem('chatPersonality') || "Friendly";
@@ -69,3 +69,4 @@ document.getElementById('message').addEventListener('keydown', e => {
 
 
 displayPersonality();
+
