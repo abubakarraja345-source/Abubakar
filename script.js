@@ -1,4 +1,4 @@
-const API_URL = '/.netlify/functions/chat';
+const API_URL = '/netlify/functions/chat';
 function displayPersonality() {
   const personality = localStorage.getItem('chatPersonality') || "Friendly";
   let emoji = "";
@@ -68,6 +68,7 @@ document.getElementById('message').addEventListener('keydown', e => {
 
 
 displayPersonality();
+
 
 
 
