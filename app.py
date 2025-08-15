@@ -7,7 +7,7 @@ load_dotenv()
 app = Flask(__name__)
 CORS(app)
 
-genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
+genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
 
 PERSONALITY_PROMPTS = {
@@ -64,3 +64,4 @@ def chat():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
