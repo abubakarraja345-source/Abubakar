@@ -1,4 +1,4 @@
-const API_URL = 'https://genai-sandy.vercel.app/api/chat';
+const API_URL = 'https://127.0.0.1:5000/chat';
 
 function displayPersonality() {
   const personality = localStorage.getItem('chatPersonality') || "Friendly";
@@ -66,5 +66,6 @@ document.getElementById('sendBtn').addEventListener('click', sendMessage);
 document.getElementById('message').addEventListener('keydown', e => {
   if (e.key === 'Enter') sendMessage();
 });
+
 
 displayPersonality();
