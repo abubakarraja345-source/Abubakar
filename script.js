@@ -1,5 +1,4 @@
-const API_URL = 'https://rainbow-genie-90be58.netlify.app/chat';
-
+const API_URL = 'https://rainbow-genie-90be58.netlify.app/.netlify/functions/chat';
 function displayPersonality() {
   const personality = localStorage.getItem('chatPersonality') || "Friendly";
   let emoji = "";
@@ -69,5 +68,6 @@ document.getElementById('message').addEventListener('keydown', e => {
 
 
 displayPersonality();
+
 
 
